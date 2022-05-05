@@ -40,8 +40,18 @@ struct ProductListView: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20){
                     ForEach(Product.productList){ product in
-                        ProductCard(product: product)
-                            .environmentObject(cartManager)
+                        
+                        NavigationLink{
+                            ProductDetailView(product: product)
+                                .environmentObject(cartManager)
+
+                        } label: {
+                            ProductCard(product: product)
+                                .environmentObject(cartManager)
+                        }
+                        .buttonStyle(.plain)
+                        
+                        
                     }
                 }
                 .padding()

@@ -15,7 +15,8 @@ struct CartView: View {
         VStack{
         if cartManager.count > 0 {
             ForEach(cartManager.items){ item in
-                Text(item.product.name)
+                ProductRow(cartItem: item)
+                    .environmentObject(cartManager)
                 
             }
             Divider()
