@@ -11,6 +11,10 @@
 		137446C928226A8A007283BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137446C828226A8A007283BB /* ContentView.swift */; };
 		137446CB28226A8D007283BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137446CA28226A8D007283BB /* Assets.xcassets */; };
 		137446CE28226A8D007283BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137446CD28226A8D007283BB /* Preview Assets.xcassets */; };
+		137446DA28226E07007283BB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137446D928226E07007283BB /* Product.swift */; };
+		137446DC28227075007283BB /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137446DB28227075007283BB /* Cart.swift */; };
+		137446DE282270DB007283BB /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137446DD282270DB007283BB /* ProductCard.swift */; };
+		137446E02823A350007283BB /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137446DF2823A350007283BB /* CartManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		137446C828226A8A007283BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		137446CA28226A8D007283BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137446CD28226A8D007283BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		137446D928226E07007283BB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		137446DB28227075007283BB /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		137446DD282270DB007283BB /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		137446DF2823A350007283BB /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		137446C528226A8A007283BB /* ShoeShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				137446D728226D74007283BB /* Helpers */,
+				137446D628226D56007283BB /* Managers */,
+				137446D528226D40007283BB /* Views */,
+				137446D428226D2E007283BB /* Models */,
 				137446C628226A8A007283BB /* ShoeShopAppApp.swift */,
-				137446C828226A8A007283BB /* ContentView.swift */,
 				137446CA28226A8D007283BB /* Assets.xcassets */,
 				137446CC28226A8D007283BB /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				137446CD28226A8D007283BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		137446D428226D2E007283BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				137446D928226E07007283BB /* Product.swift */,
+				137446DB28227075007283BB /* Cart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		137446D528226D40007283BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				137446C828226A8A007283BB /* ContentView.swift */,
+				137446DD282270DB007283BB /* ProductCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		137446D628226D56007283BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				137446DF2823A350007283BB /* CartManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		137446D728226D74007283BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				137446C928226A8A007283BB /* ContentView.swift in Sources */,
+				137446E02823A350007283BB /* CartManager.swift in Sources */,
 				137446C728226A8A007283BB /* ShoeShopAppApp.swift in Sources */,
+				137446DA28226E07007283BB /* Product.swift in Sources */,
+				137446DE282270DB007283BB /* ProductCard.swift in Sources */,
+				137446DC28227075007283BB /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
